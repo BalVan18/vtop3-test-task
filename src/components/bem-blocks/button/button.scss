@@ -1,0 +1,145 @@
+.btn {
+  @include no-btn(flex);
+  color: var(--main-white);
+  font-style: normal;
+}
+
+.btn__language,
+.btn__login,
+.btn__signup {
+  padding: 14px 0;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  min-height: 48px;
+}
+
+.btn__language,
+.btn__login {
+  border: 2px solid var(--additional-purple);
+}
+
+.btn__signup,
+.btn__hero {
+  background-color: var(--main-blue);
+}
+
+.btn__language {
+  min-width: 75px;
+}
+
+.btn__login {
+  min-width: 87px;
+}
+
+.btn__signup {
+  min-width: 97px;
+}
+
+.btn__language--icon {
+  position: relative;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+}
+
+.btn__hero {
+  padding: 20px 72px;
+  border-radius: 48px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    &__login,
+    &__signup {
+      display: none;
+    }
+  }
+ 
+  .btn__language {
+    min-width: auto;
+    min-height: auto;
+    padding: 8px;
+    border-radius: 100%;
+  }
+
+  .btn__language--icon {
+    width: 20px;
+    height: 20px;
+    top: 0;
+  }
+
+.header {
+  .header__btn {
+    .btn__hamburger {
+      display: block;
+    }
+  }
+}
+
+.header.active {
+  .hamburger__menu {
+    .btn {
+
+      &__login,
+      &__signup {
+        display: block;
+        width: 60%;
+        margin: 0;
+        padding: 13px 20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.btn__hero {
+  padding: 20px 50px;
+}
+}
+
+@media (max-width: 576px) {
+  .btn__hero {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header.active {
+    .hamburger__menu {
+      .btn {
+
+        &__login,
+        &__signup {
+          width: 100%;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+
+          &:not(:last-of-type) {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn__hero {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

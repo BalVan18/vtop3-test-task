@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head/_head.html',{
+"lang":"en",
+"title":"VTOP3",
+"description":"landing page",
+"keywords":"VTOP3",
+"favicon":"img/favicons/favicon",
+})
+
+<body style="height: calc(100vh - 230px)">
+	@@include('components/page-blocks/_header/_header.html')
+    <main class="flex --just-center --align-center" style="height: 100%">
+        <a href="./index.html">@@include('components/bem-blocks/button/button.html',{
+            "class":"btn__hero flex --just-center --align-center",
+            "text":"Back to index",
+            "svg":"",
+        })</a>
+    </main>
+	@@include('components/page-blocks/_footer/_footer.html')
+	@@include('components/page-blocks/_scripts/_scripts.html')
+</body>
+
+</html>

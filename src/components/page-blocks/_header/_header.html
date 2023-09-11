@@ -1,0 +1,57 @@
+<header class="header flex --just-space --align-center">
+    <div class="header__logo"></div>
+    <nav class="header__nav nav">
+        <ul class="nav__list flex">
+            <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Brands</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Commissions</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">News</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+        </ul>
+    </nav>
+
+    <div class="header__btn">
+        @@include('../../bem-blocks/button/button.html',{
+            "class":"btn__language js-btn__language --align-center --just-even",
+            "text":"<span class='js-btn__text'>EN</span>",
+            "svg":"@@include('../../bem-blocks/_sprite/_sprite.html',{'class': 'btn__language--icon', 'id': 'union'})"
+        })
+        @@include('../../bem-blocks/button/button.html',{
+            "class":"btn__login flex --just-center --align-center",
+            "text":"LOG IN",
+            "svg":"",
+        })
+        @@include('../../bem-blocks/button/button.html',{
+            "class":"btn__signup flex --just-center --align-center",
+            "text":"SIGN UP",
+            "svg":"",
+        })
+        <div class="btn__hamburger hamburger">
+            <span class="hamburger__span span--1"></span>
+            <span class="hamburger__span span--2"></span>
+            <span class="hamburger__span span--3"></span>
+        </div>
+    </div>
+
+    <div class="hamburger__menu flex --dir-col --align-center">
+        <ul class="menu__list flex --dir-col --align-center">
+            <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Brands</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Commissions</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Careers</a></li>
+        </ul>
+        @@include('../../bem-blocks/button/button.html',{
+            "class":"btn__login hamburger__login",
+            "text":"LOG IN",
+            "svg":"",
+        })
+        @@include('../../bem-blocks/button/button.html',{
+            "class":"btn__signup hamburger__signup",
+            "text":"SIGN UP",
+            "svg":"",
+        })
+    </div>
+</header>

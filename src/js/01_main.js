@@ -1,0 +1,1 @@
+let bar = new SimpleBar(document.querySelector('.blog__list'), { scrollbarMaxSize: 104 });
